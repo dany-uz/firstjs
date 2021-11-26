@@ -1,0 +1,74 @@
+body { 
+    background-image: url(../img/fondo1.jpg);
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+}
+
+.box { 
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    width: 600px;
+    padding: 40px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+.box h1 { 
+    color: white; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
+
+.box input[type = "text"] { 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.363));
+    display: block; 
+    margin: 20px auto; 
+    text-align: center; 
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);    
+    padding: 14px 10px; 
+    width: 200px; 
+    outline: none; 
+    color: white; 
+    transition: 0.25s; 
+}
+
+::placeholder {
+    color: white;
+}
+
+.box input[type="text"]:focus { 
+    width: 350px; 
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);   
+}
+
+.box button { 
+    border: 0; 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.363));
+    display: block; 
+    margin: 20px auto; 
+    text-align: center; 
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);    
+    padding: 14px 10px; 
+    width: 200px; 
+    outline: none; 
+    color: white; 
+    transition: 0.25s; 
+    cursor: pointer; 
+}
+
+.box button:hover { 
+    background: #181818; 
+}
