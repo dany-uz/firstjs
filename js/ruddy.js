@@ -1,9 +1,8 @@
-function servicios() {
-    var cantds, cantai, cantst;
+function empresa() {
 
-    cantds = prompt('¿Cuántos servicios de Diseño de Software necesita?');
-    cantai = prompt('¿Cuántos servicios de Actualización de Interfaz necesita?');
-    cantst = prompt('¿Cuántos servicios de Soporte Técnico necesita?');
+    let cantds = document.getElementById("preciosoftware").value;
+    let cantai = document.getElementById("preciointerfaz").value;
+    let cantst = document.getElementById("preciosoporte").value;
 
     cs = cantds + cantai + cantst;
     ctds = cantds*3500000;
