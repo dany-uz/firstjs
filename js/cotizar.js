@@ -1,29 +1,29 @@
 function cotizar() {
 
-    let cantds = document.getElementById('preciosoftware').value;
-    let cantai = document.getElementById('preciointerfaz').value;
-    let cantst = document.getElementById('preciosoporte').value;
+    let CantidadDiseñoSoftware = document.getElementById('preciosoftware').value;
+    let CantidadActualizacionInterfaz = document.getElementById('preciointerfaz').value;
+    let CantidadSoporteTecnico = document.getElementById('preciosoporte').value;
 
-    cs = cantds + cantai + cantst;
-    ctds = cantds*3500000
-    ctai = cantai*1500000;
-    ctst = cantst*2000000;
-    ct = ((cantds*3500000)+(cantai*1500000)+(cantst*2000000));
+    CantidadServicios = CantidadDiseñoSoftware + CantidadActualizacionInterfaz + CantidadSoporteTecnico;
+    CantidadTotalDiseñoSoftware = CantidadDiseñoSoftware*3500000
+    CantidadTotalActualizacionInterfaz = CantidadActualizacionInterfaz*1500000;
+    CantidadTotalSoporteTecnico = CantidadSoporteTecnico*2000000;
+    CostoTotal = ((CantidadDiseñoSoftware*3500000)+(CantidadActualizacionInterfaz*1500000)+(CantidadSoporteTecnico*2000000));
 
-    if ((parseInt(cs)>5) && (parseInt(ct)>10000000)) {
-        st = ct
-        vt = ct-(ct*0.25);
+    if ((parseInt(CantidadServicios)>5) && (parseInt(CostoTotal)>10000000)) {
+        Subtotal = CostoTotal
+        ValorTotal = CostoTotal-(CostoTotal*0.25);
     } else {
-        st = ct
-        vt = ct
+        Subtotal = CostoTotal
+        ValorTotal = CostoTotal
     }
     
-    document.getElementById('st').innerHTML = st;
-    document.getElementById('vt').innerHTML = vt;
-    document.getElementById('cantds').innerHTML = cantds ;
-    document.getElementById('cantai').innerHTML = cantai;
-    document.getElementById('cantst').innerHTML = cantst;
-    document.getElementById('ctds').innerHTML = ctds;
-    document.getElementById('ctai').innerHTML = ctai;
-    document.getElementById('ctst').innerHTML = ctst;
+    document.getElementById('Subtotal').innerHTML = Subtotal;
+    document.getElementById('ValorTotal').innerHTML = ValorTotal;
+    document.getElementById('CantidadDiseñoSoftware').innerHTML = CantidadDiseñoSoftware ;
+    document.getElementById('CantidadActualizacionInterfaz').innerHTML = CantidadActualizacionInterfaz;
+    document.getElementById('CantidadSoporteTecnico').innerHTML = CantidadSoporteTecnico;
+    document.getElementById('CantidadTotalDiseñoSoftware').innerHTML = CantidadTotalDiseñoSoftware;
+    document.getElementById('CantidadTotalActualizacionInterfaz').innerHTML = CantidadTotalActualizacionInterfaz;
+    document.getElementById('CantidadTotalSoporteTecnico').innerHTML = CantidadTotalSoporteTecnico;
 }
