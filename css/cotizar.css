@@ -14,15 +14,17 @@ body {
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     width: 600px;
+    height: 95%;
     padding: 40px; 
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center; 
+    overflow: auto;
 }
 
-#box h1, h2 { 
+#box h1, h2, h3 { 
     color: white; 
     text-transform: uppercase; 
     font-weight: bold; 
@@ -71,4 +73,29 @@ label {
 
 #box button:hover { 
     background: #181818; 
+}
+
+#box::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#box::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+#box::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#box::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#box::-webkit-scrollbar-thumb {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
